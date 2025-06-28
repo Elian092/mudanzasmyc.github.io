@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudanzas M&C Cartagena - Tu Tranquilidad en Cada Traslado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chosen Palette: Warm Neutrals (Background: #FDFBF8, Text: #4A4A4A, Accent: #E87A5D) -->
+    <!-- Application Structure Plan: The SPA is designed as a single-page, top-to-bottom narrative flow to guide the user. It starts with a strong value proposition (Hero section), builds trust by detailing the company's pillars ('Por Qué Elegirnos'), demystifies the process with a step-by-step guide ('Nuestro Proceso'), and culminates in a clear call-to-action for contact, now incorporating the estimation details directly into the main contact form ('Contacto'). This structure simplifies the user journey by consolidating interaction points, making it more intuitive for a service-based business. -->
+    <!-- Visualization & Content Choices: The flyer's text is transformed into interactive and visual sections. 'Por Qué Elegirnos' uses a card layout with Unicode icons (Goal: Inform/Compare, Method: HTML/CSS Grid) for better readability. 'Nuestro Proceso' uses a visual timeline (Goal: Organize, Method: HTML/CSS Flexbox) to simplify the customer journey. The estimation dropdowns are now part of the main contact form (Goal: Engage/Relationships, Method: HTML Form + JS), allowing the user to provide all necessary details in one go, with a primary call to action for WhatsApp, and a secondary form submission option via email client. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FDFBF8;
+            color: #4A4A4A;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        .hero-bg {
+            background-color: #f9f4ef;
+        }
+        .accent-bg {
+            background-color: #E87A5D;
+        }
+        .accent-text {
+            color: #E87A5D;
+        }
+        .accent-border {
+            border-color: #E87A5D;
+        }
+        .step-circle {
+            background-color: #E87A5D;
+            color: white;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-bg sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                Mudanzas <span class="accent-text">M&C</span>
+            </div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#porque-nosotros" class="hover:accent-text transition-colors duration-300">Por Qué Elegirnos</a></li>
+                <li><a href="#proceso" class="hover:accent-text transition-colors duration-300">Nuestro Proceso</a></li>
+                <li><a href="#contacto" class="hover:accent-text transition-colors duration-300">Cotiza Aquí</a></li>
+            </ul>
+            <a href="#contacto" class="hidden md:block bg-[#E87A5D] text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition-all duration-300">
+                Contactar
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-bg text-center py-20 md:py-32 px-6">
+            <div class="container mx-auto">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">Tu mudanza en Cartagena, <br class="hidden md:block"> fácil y sin estrés.</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-gray-600">En Mudanzas M&C, convertimos el caos de una mudanza en una experiencia tranquila y organizada. Tu tranquilidad es nuestro destino.</p>
+                <a href="#contacto" class="bg-[#E87A5D] text-white px-10 py-4 rounded-full text-lg font-bold hover:bg-opacity-90 transition-all duration-300 shadow-lg">
+                    Obtener Cotización Gratis
+                </a>
+            </div>
+        </section>
+
+        <section id="porque-nosotros" class="py-20 px-6">
+            <div class="container mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">¿Por qué mudarte con nosotros?</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Nuestra promesa se basa en pilares sólidos que garantizan tu satisfacción y la seguridad de tus pertenencias. Esto es lo que nos hace diferentes.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
+                        <div class="text-4xl accent-text mb-4">✓</div>
+                        <h3 class="text-2xl font-bold mb-2">Confianza Garantizada</h3>
+                        <p class="text-gray-600">Tratamos tus pertenencias como si fueran nuestras. Nuestro equipo está capacitado para manejar todo con el máximo cuidado y profesionalismo.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
+                        <div class="text-4xl accent-text mb-4">😊</div>
+                        <h3 class="text-2xl font-bold mb-2">Servicio Amigable</h3>
+                        <p class="text-gray-600">Te acompañamos en cada paso con una sonrisa. Estamos aquí para resolver tus dudas y hacerte sentir cómodo durante todo el proceso.</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
+                        <div class="text-4xl accent-text mb-4">🚀</div>
+                        <h3 class="text-2xl font-bold mb-2">Rapidez y Eficiencia</h3>
+                        <p class="text-gray-600">Valoramos tu tiempo. Nos esforzamos para que tu mudanza sea rápida, organizada y sin demoras innecesarias.</p>
+                    </div>
+                     <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
+                        <div class="text-4xl accent-text mb-4">🗺️</div>
+                        <h3 class="text-2xl font-bold mb-2">Cobertura Local</h3>
+                        <p class="text-gray-600">Conocemos Cartagena y sus alrededores a la perfección. Realizamos mudanzas dentro de la ciudad y zonas cercanas con total seguridad.</p>
+                    </div>
+                     <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
+                        <div class="text-4xl accent-text mb-4">💰</div>
+                        <h3 class="text-2xl font-bold mb-2">Precios Justos</h3>
+                        <p class="text-gray-600">Ofrecemos tarifas competitivas sin sacrificar la calidad. Obtén un servicio de primera a un precio que se ajusta a tu presupuesto.</p>
+                    </div>
+                     <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-300">
+                        <div class="text-4xl accent-text mb-4">📦</div>
+                        <h3 class="text-2xl font-bold mb-2">Cuidado Extremo</h3>
+                        <p class="text-gray-600">Desde el embalaje hasta el desembalaje, cada objeto es protegido para que llegue a tu nuevo hogar en perfectas condiciones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proceso" class="py-20 px-6 hero-bg">
+            <div class="container mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Nuestro Proceso en 3 Simples Pasos</h2>
+                     <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Hemos simplificado el proceso de mudanza para que sea lo más claro y sencillo posible. Así es como trabajamos contigo para asegurar un traslado exitoso.</p>
+                </div>
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 md:space-x-8">
+                    <div class="text-center flex flex-col items-center max-w-xs">
+                        <div class="step-circle flex items-center justify-center rounded-full font-bold text-2xl mb-4">1</div>
+                        <h3 class="text-xl font-bold mb-2">Contacta y Cotiza</h3>
+                        <p class="text-gray-600">Nos contactas, nos cuentas tus necesidades y te damos un presupuesto claro y sin compromiso.</p>
+                    </div>
+                    <div class="text-2xl accent-text hidden md:block transform -translate-y-4">→</div>
+                    <div class="text-center flex flex-col items-center max-w-xs">
+                        <div class="step-circle flex items-center justify-center rounded-full font-bold text-2xl mb-4">2</div>
+                        <h3 class="text-xl font-bold mb-2">Empacamos y Transportamos</h3>
+                        <p class="text-gray-600">Llegamos el día acordado, empacamos todo con cuidado y lo transportamos de forma segura a tu nuevo hogar.</p>
+                    </div>
+                     <div class="text-2xl accent-text hidden md:block transform -translate-y-4">→</div>
+                    <div class="text-center flex flex-col items-center max-w-xs">
+                        <div class="step-circle flex items-center justify-center rounded-full font-bold text-2xl mb-4">3</div>
+                        <h3 class="text-xl font-bold mb-2">Entrega y Disfruta</h3>
+                        <p class="text-gray-600">Dejamos tus pertenencias donde nos indiques y listo. ¡Solo te queda disfrutar de tu nuevo espacio!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="cotiza" class="py-20 px-6">
+             <div class="container mx-auto">
+                 <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">¿Listo para tu mudanza?</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">Envíanos un WhatsApp con los detalles de tu mudanza para una cotización rápida y personalizada. ¡Te esperamos!</p>
+                </div>
+                <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg border border-gray-100 text-center">
+                     <button id="whatsapp-button-main" class="bg-[#25D366] text-white p-4 rounded-lg text-lg font-bold hover:bg-opacity-90 transition-all duration-300 flex items-center justify-center mx-auto shadow-lg">
+                        <span class="mr-2"></span> ¡Enviar detalles por WhatsApp!
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="py-20 px-6 hero-bg">
+            <div class="container mx-auto">
+                 <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Contáctanos Hoy para tu Cotización</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Para una cotización precisa, por favor completa el siguiente formulario incluyendo los detalles de tu mudanza. Nos pondremos en contacto contigo a la brevedad.</p>
+                </div>
+                <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <form id="quoteForm">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <input type="text" id="name" placeholder="Tu Nombre" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#E87A5D]" required>
+                            <input type="email" id="email" placeholder="Tu Correo Electrónico (opcional)" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#E87A5D]">
+                        </div>
+                         <div class="mb-6">
+                              <input type="tel" id="phone" placeholder="Tu WhatsApp" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#E87A5D]">
+                         </div>
+                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="move-size" class="block font-bold mb-2">Tamaño de la vivienda</label>
+                                <select id="move-size-form" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#E87A5D]">
+                                    <option value="Apartaestudio">Apartaestudio</option>
+                                    <option value="Apartamento (2 hab)">Apartamento (2 hab)</option>
+                                    <option value="Casa Pequeña (3 hab)">Casa Pequeña (3 hab)</option>
+                                    <option value="Casa Grande (4+ hab)">Casa Grande (4+ hab)</option>
+                                    <option value="Oficina Pequeña">Oficina Pequeña</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="packing-service" class="block font-bold mb-2">Servicio de empaque</label>
+                                <select id="packing-service-form" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#E87A5D]">
+                                    <option value="Sí, necesito ayuda">Sí, necesito ayuda</option>
+                                    <option value="No, yo me encargo">No, yo me encargo</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <textarea id="message" placeholder="Cuéntanos más sobre tu mudanza (direcciones de origen y destino, fechas preferidas, ítems especiales, etc.)" rows="5" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#E87A5D]"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-[#E87A5D] text-white p-4 rounded-lg text-lg font-bold hover:bg-opacity-90 transition-all duration-300">
+                            Enviar Solicitud de Cotización
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#4A4A4A] text-white text-center py-10 px-6">
+        <div class="container mx-auto">
+            <p class="font-bold text-xl mb-2">Mudanzas M&C</p>
+            <p>"Tu tranquilidad en cada traslado"</p>
+            <p class="mt-4 text-gray-400">© 2025 Mudanzas M&C. Todos los derechos reservados. Cartagena, Colombia.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // WhatsApp Button Logic
+            const whatsappButtonMain = document.getElementById('whatsapp-button-main');
+            const whatsappPhoneNumber = '573001234567'; // Reemplaza con el número de WhatsApp real de Mudanzas M&C (ej: 57 para Colombia + número)
+
+            whatsappButtonMain.addEventListener('click', () => {
+                // Values for WhatsApp can still be generic if coming from this simplified section
+                const message = encodeURIComponent(`Hola Mudanzas M&C, me gustaría una cotización. Por favor, contáctenme para más información sobre una mudanza.`);
+                const whatsappUrl = `https://wa.me/${whatsappPhoneNumber}?text=${message}`;
+                window.open(whatsappUrl, '_blank');
+            });
+
+            // Email Form Submission Logic
+            const quoteForm = document.getElementById('quoteForm');
+            const targetEmail = 'mudanzasmc@outlook.com'; // **IMPORTANTE: Reemplaza con el correo electrónico al que quieres recibir las cotizaciones**
+
+            quoteForm.addEventListener('submit', (event) => {
+                event.preventDefault(); // Evita el envío del formulario por defecto
+
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const moveSize = document.getElementById('move-size-form').value;
+                const packingService = document.getElementById('packing-service-form').value;
+                const message = document.getElementById('message').value;
+
+                const subject = encodeURIComponent(`Nueva Solicitud de Cotización - Mudanzas M&C de ${name}`);
+                const body = encodeURIComponent(
+                    `Hola Mudanzas M&C,\n\n` +
+                    `He enviado una solicitud de cotización desde su sitio web con los siguientes detalles:\n\n` +
+                    `Nombre: ${name}\n` +
+                    `Correo Electrónico: ${email || 'No proporcionado'}\n` +
+                    `Teléfono/WhatsApp: ${phone || 'No proporcionado'}\n` +
+                    `Tamaño de la vivienda: ${moveSize}\n` +
+                    `Servicio de empaque: ${packingService}\n` +
+                    `Mensaje Adicional: ${message}\n\n` +
+                    `Por favor, contáctenme para coordinar la cotización.`
+                );
+
+                const mailtoLink = `mailto:${targetEmail}?subject=${subject}&body=${body}`;
+                window.open(mailtoLink, '_blank'); // Abre el cliente de correo por defecto
+            });
+        });
+    </script>
+</body>
+</html>
